@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl	text-center mt-12">Your personal
+            <span class="text-emerald-400 font-semibold">Bank-acound !!!</span></h1>
+    </header>
+    <main>
+        <section class="">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto mt-12">
+                <div class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg p-8">
+                    <h2 class="text-4xl mb-3">Deposit</h2>
+                    <h2 class="text-3xl font-semibold">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-gradient-to-r from-violet-600 to-purple-400 text-white rounded-lg p-8">
+                    <h2 class="text-4xl mb-3">Withdraw</h2>
+                    <h2 class="text-3xl font-semibold">$<span id="total-withdraw">00</span></h2>
+                </div>
+                <div class="bg-gradient-to-r from-sky-600 to-fuchsia-300 text-white rounded-lg p-8">
+                    <h2 class="text-4xl mb-3">Balance</h2>
+                    <h2 class="text-3xl font-semibold">$<span id="balance-total">1240</span></h2>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-12">
+                <div class="bg-green-500 rounded-lg p-8">
+                    <h2 class="text-4xl mb-3 text-white">Please Deposit</h2>
+                    <div class="mt-8 ml-8">
+                        <input id="diposit-amound" class="mb-5 w-3/4 p-2 rounded-lg	" type="email" name=""  placeholder="$ amound you want to deposit"> <br>
+                        <button id="btn-deposit" class="bg-gradient-to-r from-amber-600 to-purple-500 hover:from-sky-600 hover:to-sky-500 font-bold px-6 py-3 rounded-lg  text-white">Submit</button>
+                    </div>
+                </div>
+                <div class="bg-indigo-400 rounded-lg p-8">
+                    <h2 class="text-4xl mb-3 text-white">Please Withdraw</h2>
+                    <div class="mt-8 ml-8">
+                        <input id="withdraw-amound" class="mb-5 w-3/4 p-2 rounded-lg	" type="email" name=""  placeholder="$ amound you want to withdraw"> <br>
+                        <button id="btn-withdraw" class="bg-gradient-to-r from-amber-600 to-purple-500 hover:from-sky-600 hover:to-sky-500 font-bold px-6 py-3 rounded-lg  text-white">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/deposit.js"></script>
+</body>
+</html>
